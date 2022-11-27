@@ -1,0 +1,112 @@
+/*Стиль шапки с серым фоном и отступами */
+.header {
+  overflow: hidden;
+  background-color: #c6efce;
+  padding: 0px 10px;
+  border: thick double #04f876;
+  color: rgb(22, 104, 31);
+}
+
+/*Стиль навигации с серым фоном и отступами*/
+.navigition {
+  overflow: hidden;
+  background-color: #5deaf4;
+  padding: 5px 10px;
+}
+
+/*Стиль ссылок шапки*/
+.navigition a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Изменение цвета фона при наведении курсора */
+.navigition a:hover {
+  background-color: rgb(186, 250, 181);
+  color: black;
+}
+
+/* Стиль активной/текущей ссылки */
+.navigition a.active {
+  background-color: rgb(25, 173, 227);
+  color: white;
+}
+
+/Сдвигаем секцию со ссылками вправо / .navigition-right {
+  float: right;
+}
+
+/* Медиа-запрос для адаптивности – когда ширина
+  экрана 650px или меньше, ссылки будут друг над другом */
+@media screen and (max-width: 650px) {
+  .navigition a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navigition-right {
+    float: none;
+  }
+}
+
+/*Боковая панель*/
+.panel {
+  overflow: hidden;
+  float: left;
+  padding: 0px 10px;
+  height: 50em;
+  width: 15%;
+  background-color: #aff3aa;
+  border: 1px solid #18a383;
+  background-color: #aff3aa;
+  border: 1px solid #18a383;
+}
+
+/*Содержимое страницы*/
+.include {
+  overflow: hidden;
+  float: left;
+  padding: 0px 10px;
+  height: 50em;
+  width: 81%;
+  margin-left: 1%;
+  background-color: #b4e1b1;
+  border: 1px solid #18a383;
+}
+
+/*Подвал*/
+.footer {
+  position: fixed;
+  padding: 0px 10px;
+  bottom: 0px;
+  height: auto;
+  width: 100%;
+  background-color: #053c58;
+  color: #f5f5f4;
+}
+
+/*Аудио */
+.audio {
+  margin: 10px;
+  width: 50%;
+}
+
+/*Картинка*/
+.images {
+  width: 30%;
+  float: left;
+  padding: 0px 5px;
+}
+
+/*Видео*/
+.video {
+  width: 50%;
+  height: 60%;
+  padding: 0px 5px;
+}
